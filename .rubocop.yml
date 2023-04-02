@@ -1,0 +1,37 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - 'gemfiles/*'
+    - 'tmp/*'
+
+Style/Documentation:
+  Enabled: false
+
+Style/NumericLiterals:
+  MinDigits: 7
+  Strict: true
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/StringLiteralsInInterpolation:
+  Enabled: true
+  EnforcedStyle: single_quotes
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Layout/LineLength:
+  Max: 120
+
+Lint/MissingSuper:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'active_record_polyline.gemspec'
